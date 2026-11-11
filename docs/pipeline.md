@@ -22,6 +22,8 @@ flowchart TD
     R --> M[Human merges]
 ```
 
+For the orchestrator-driven mode, see [`orchestrated.md`](orchestrated.md).
+
 ## Stages
 
 | # | Stage | Runs as | Trigger | Reads | Writes |

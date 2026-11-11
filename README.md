@@ -113,4 +113,5 @@ Linear issue ─▶ PRD ─▶ Planner ─▶ Dev ─▶ Code Review + E2E QA �
 ```
 
 See [`docs/pipeline.md`](docs/pipeline.md) for every stage, its trigger, the
-Linear signals it uses, and its guardrails.
+Linear signals it uses, and its guardrails. See
+[`docs/orchestrated.md`](docs/orchestrated.md) for the orchestrator-driven mode.

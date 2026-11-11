@@ -23,6 +23,7 @@ read and follow only that stage's file:
 | `review` | `stages/review.md` | Code Review automation, chained after Dev |
 | `qa` | `stages/qa.md` | QA automation, chained after Code Review; sends stories back to Dev with `bug` |
 | `babysit` | `stages/babysit.md` | Legacy PR Babysitter (GitHub Actions setup), paused |
+| `orchestrated` | `orchestrated.md` | PDLC workstream orchestrator. Read it in addition to the named stage file; it overrides this file where they differ |
 
 Every stage runs on the Droid Computer. No GitHub Actions workflow is part of
 the pipeline.
@@ -42,6 +43,8 @@ one stage in a session.
 | Linear states | `Todo`, `In Progress`, `In Review`, `Done` |
 | Story branch | `story/<KEY>`, for example `story/SED-142` |
 | PR title | `[<KEY>] <story title>` |
+
+In orchestrated mode, `orchestrated.md` overrides the Linear project with `CBRE Demo`.
 
 Use the Linear connector tools for Linear and the `gh` CLI for GitHub. Never
 mention `@droid` in a GitHub comment or reply: that starts the Droid Tag
